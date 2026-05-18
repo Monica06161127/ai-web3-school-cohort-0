@@ -1,28 +1,28 @@
-# 🚀 AI × Web3 School Cohort 0 — Luvia's Learning Repository
+# AI × Web3 School Cohort 0 — Luvia's Learning Repository
 
 > 记录我在 AI × Web3 School 共学营的完整学习历程
 
-## 📖 关于 AI × Web3 School
+## 关于 AI × Web3 School
 
-[AI × Web3 School](https://aiweb3.school) 是一个为期 6 周的高强度共学营，培养 AI 与 Web3 复合型人才。
+[AI × Web3 School](https://aiweb3.school) 是一个为期 4 周的高强度共学营（5/18-6/14），培养 AI 与 Web3 复合型人才。由 LXDAO 与 ETHPanda 联合发起，Z.AI 领衔赞助，Cobo 联合赞助。
 
 - **Handbook**: [共学营手册](https://aiweb3.school/zh/handbook/)
 - **Learning Agent Prompt**: [启动提示](https://aiweb3.school/learning-agent.zh.txt)
 - **共学营页面**: [Intensive Co-learning](https://intensivecolearn.ing/programs/AI-Web3-School)
 
-## 👤 关于我
+## 关于我
 
 **Luvia** — 金融专业大一学生，零编程基础，正在学习 AI × Web3。
 
 想了解更多？看 [profile.md](./profile.md)
 
-## 📁 仓库结构
+## 仓库结构
 
 ```
 ai-web3-school-cohort-0/
 ├── README.md                  ← 你正在看的这个文件
 ├── profile.md                 ← 个人简介 & 目标
-├── learning-plan.md           ← 16 周 → 修正为 4 周共学营学习计划
+├── learning-plan.md           ← 4 周共学营学习计划
 ├── daily-checkin/             ← 每日打卡记录
 │   ├── template.md            ← 打卡模板
 │   └── 2026-05-*.md           ← 每日打卡
@@ -44,20 +44,18 @@ ai-web3-school-cohort-0/
     └── links.md
 ```
 
-## 📈 学习进度
+## 学习进度
 
-### 共学营 6 周
+### 共学营 4 周（5/18-6/14）
 
-| Week | 主题 | 状态 |
-|------|------|------|
-| Week 1 (5/17-18) | AI 原生应用 + Web3 范式演变 | 🔄 进行中 |
-| Week 2 (5/24-25) | AI Agent 协议 + L1/L2 架构 + DePIN | ⏳ |
-| Week 3 (5/31-6/1) | ZKP/ZKML + Web3 安全 + Tokenomics | ⏳ |
-| Week 4 (6/7-8) | LLM 精调 + Chainlink + 开发者工具 | ⏳ |
-| Week 5 (6/14-15) | 实战周：组队做项目 | ⏳ |
-| Week 6 (6/21-22) | Demo Day | ⏳ |
+| Week | 日期 | 主题 | 核心内容 | 状态 |
+|------|------|------|----------|------|
+| Week 1 | 5/18-5/23 | AI 与 Web3 基础知识 | LLM/Agent/钱包/签名/智能合约/测试网 | 进行中 |
+| Week 2 | 5/24-5/31 | AI × Web3 交叉方向 | Agentic Commerce/Dev Tooling/AI Security/Governance | |
+| Week 3 | 6/1-6/7 | 实践深化与 Hackathon 启动 | 小型实战练习 + 确定 Hackathon 项目 | |
+| Week 4 | 6/8-6/14 | Hackathon 集中开发与 Demo | 核心功能开发 + Demo 展示 | |
 
-### 预习冲刺（5/10-15，已完成）
+### 预习冲刺（5/10-5/15，已完成）
 
 | Day | 主题 | 收获 |
 |-----|------|------|
@@ -68,14 +66,22 @@ ai-web3-school-cohort-0/
 | Day 5 | AI×Web3 交叉 | Vibe Coding、Agentic Commerce、DePIN |
 | Day 6 | 整合复习 | 笔记整理 + 问题清单 |
 
-## ⚠️ 隐私提醒
+## Week 1 准备任务清单
+
+- [x] 参加开幕式（5/17）
+- [x] 创建课程 GitHub Repo
+- [ ] 完成一次 Proof-of-Work 提交测试
+- [ ] 在 X/Twitter 上发布 AI × Web3 School 起点帖
+- [ ] 建立 AI × Web3 行业关注清单
+
+## 隐私提醒
 
 本仓库为 **public**，所有内容公开可见。请注意：
 - 不要在笔记中提交私钥、助记词、API Key 等敏感信息
 - 不要在代码中硬编码 Token 或密码
 - 学习笔记中的错误是成长的一部分，不需要隐藏
 
-## 🔗 相关链接
+## 相关链接
 
 - [AI × Web3 School 官网](https://aiweb3.school)
 - [Handbook](https://aiweb3.school/zh/handbook/)
