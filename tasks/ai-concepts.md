@@ -1,6 +1,6 @@
 # 🧠 AI 基础概念卡片
 
-> AI × Web3 School Week 1 · Luvia（闫卉彤）
+> AI × Web3 School Week 1 · Luvia
 > 用生活类比帮助自己建立 AI 领域的共同语言
 
 ---
