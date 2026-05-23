@@ -1,6 +1,6 @@
 # 🛠️ Week 1 工具准备记录
 
-> AI × Web3 School Cohort 0 · Luvia（闫卉彤）· 学员 #3312
+> AI × Web3 School Cohort 0 · Luvia· 学员 #3312
 
 ---
 
@@ -21,7 +21,7 @@
 
 | 工具 | 版本 | 用途 |
 |------|------|------|
-| **Hermes Agent** | v0.14.0 | **主力 Learning Agent**：每日学习提醒（9:00 + 21:00 cron）、WCB 任务查询与提交、学习笔记生成、知识梳理、小红书打卡草稿 |
+| **Hermes Agent** | v0.14.0 | **主力 Learning Agent**：每日学习提醒（9:00 + 21:00 cron）、WCB 任务查询与提交、学习笔记生成、知识梳理 |
 | **Claude Code** | v2.1.146 | 代码辅助：编写脚本、调试代码、理解技术文档，适合需要深度代码交互的任务 |
 | **NotebookLM** | Web 端 | 文档理解：上传 HandBook / 讲义，生成结构化摘要和问答 |
 
