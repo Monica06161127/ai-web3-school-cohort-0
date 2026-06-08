@@ -11,7 +11,7 @@
 - **赛道**：Z.AI（Web3 × Long-Horizon Task）；模型 = GLM-5.1（赛道指定 demo backend，系统 model-agnostic）
 - **目标链**：**ETH Sepolia**（DeFi/swap 较真实 → 有真 tx 可验；ERC-8004 已部署；工具成熟）
 - **ERC-8004**：pin master commit（无 tags）；Identity / Reputation 已部署 Sepolia 可直接用；Validation Registry 自部署最小兼容版
-- **团队**：**2 人** —— John（技术 lead，做全部技术）+ Luvia（运营，扛全部非程式）。原技术 #2 已退出 → dashboard 砍到最小
+- **团队**：**3 人，2 dev** —— John（技术 lead）+ #2（归队，负责 Dashboard）+ Luvia（运营）。#2 归队 → dashboard 回到 ON
 - **codename**：沿用 **EIV**
 
 **现状**：walking skeleton 已完成（`predicates.py` 确定性核心已测；selftest 23/23；三个 stub 边界接口冻结）。Week 4 = 把 stub 换真 + 接 GLM-5.1 外圈 + 2–3 场景 demo。
@@ -28,15 +28,14 @@
 
 ### ③ Repo Skeleton README → `repo-skeleton-README.md`
 对外 repo README：problem / track / target chain / MVP flow / tech stack / repo layout / how to run / risks / validation plan。
-重点：`eiv/` 已是雏形（17 档/1706 行，零第三方依赖）；ERC-8004 整合事实。
+重点：`eiv/` 已是雏形（17 档/1706 行，零第三方依赖）；ERC-8004 整合事实。代码已拆分为独立仓库：`eiv-core`（John）+ `eiv-dashboard`（#2）。
 
 ### ④ Sprint Plan（Week 4）→ `sprint-plan-week4.md`
-6/8–6/13 每日计划，哪些真实现 / 哪些 mock-fallback，已按 1-dev 现实重新平衡。
-重点：John 集中核心；Luvia 扛 pitch / 影片 / README / 提交 / 发推文；dashboard 最小化。
+6/8–6/13 每日计划，已按 2-dev 重排。John 专注核心链路；#2 负责 dashboard + 共担整合/测试；Luvia 扛 pitch / 影片 / README / 提交 / 发推文。
 
 ### ⑤ Risk Memo → `risk-memo.md`
 前提假设 / 最可能失败点（pre-mortem）/ Week 4 fallback。
-重点：单一开发者人力风险 + 对策；ERC-8004 Validation Registry in-flux → 自部署。
+重点：#2 技能/分工确认；ERC-8004 Validation Registry in-flux → 自部署；诚实边界声明。
 
 ### ⑥ Sponsor / Mentor Questions → `sponsor-mentor-questions.md`
 1–3 个具体、可一句话回答的问题。

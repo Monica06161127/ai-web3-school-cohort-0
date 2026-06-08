@@ -12,9 +12,9 @@
 
 ## 最可能失败点（Pre-Mortem）
 
-### 1. 单一开发者人力瓶颈
-- **风险**：John 一人扛全部技术（validator + chain adapter + ERC-8004 + dashboard + agent + 部署），6 天内可能完不成
-- **对策**：dashboard 砍到最小、玩具 agent 走脚本、核心 timebox；我扛所有非程式产出让 John 专注核心
+### 1. #2 技能 / 分工未完全确认
+- **风险**：#2 刚归队，技能方向（前端 / Solidity / backend）尚未由 John 确认；若 #2 偏 Solidity 而非前端，dashboard 可能需退回最小形式
+- **对策**：John 尽快确认 #2 技能并分配；默认 #2 owns dashboard；若实际偏 Solidity 则改分担合约/测试、dashboard 部分回退
 
 ### 2. ERC-8004 Validation Registry in-flux
 - **风险**：Validation Registry 没有 canonical 已部署地址，仍在讨论中，接口可能变
@@ -35,7 +35,7 @@
 | Validation Registry 无法按时部署 | 走自部署最小兼容版，不依赖上游可用性 |
 | GLM-5.1 调查回圈不稳定 | 先半自动（人 + LLM 协作），保证核心流程跑通 |
 | 真链 tx 解码出问题 | 先用结构正确的 fixture 跑通管线，再切真 Sepolia RPC |
-| Dashboard 做不出来 | 纯 CLI / log 输出 diff，demo 够用 |
+|| #2 dashboard 做不出来 | 退回最小表格 / CLI viewer，money shot 仍保留 |
 | 2–3 场景跑不齐 | 至少 1 个场景全真链端到端，其余诚实标明 mock |
 
 ## 核心信任主张一致性
@@ -44,3 +44,9 @@
 - **PASS 有界**：没验出问题不等于没问题，依赖覆盖率与诚实
 - **非即时防护**：这是究责/信任层，不阻止单笔交易
 - **Production 补丁**：staking / zkML / TEE 是 future，不在 MVP 范围
+
+## 诚实边界（必须一致地说）
+
+- **FAIL 可重跑** → 半 trustless（自己跑 PoC 即可验证）
+- **PASS 有界** → "没验出问题"无法被证明，依赖覆盖率与诚实；production 才上 staking / zkML / TEE
+- **非即时防护** → 究责 / 信任层，不阻止单笔交易

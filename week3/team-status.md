@@ -4,22 +4,27 @@
 
 ## 组成
 
-**2 人团队**：John（技术 lead）+ Luvia（运营）。
-原先假定的第 2 名技术成员已退出（无联络管道，无接替）→ John 一人承担全部技术工作。
+**3 人团队，2 名开发者**：John（技术 lead）+ 技术 #2（归队）+ Luvia（运营）。
+原技术 #2 已归队 → dashboard 回到 ON，Sprint 按 2-dev 重排。
 
 ## 角色与主责
 
 - **John（技术 lead）**
-  - 主责：全部技术——validator 核心 + 检查逻辑 + chain adapter + ERC-8004 整合 + attest + MCP + 最小 dashboard + 玩具 agent + 部署
+  - 主责：validator 核心 + 完整性逻辑 + chain adapter + ERC-8004 整合 / attestation + agent（LLM 调查）回圈 + 自部署 Validation Registry + 部署
+  - 可投入时间：大致全程在线
+
+- **技术 #2（归队）**
+  - 主责：Dashboard / Demo UI（intent-vs-execution diff 的 money shot + mock consumer 拒绝画面）+ 共担整合 / 测试
+  - 技能方向：[John to confirm: frontend? Solidity? backend?]
   - 可投入时间：大致全程在线
 
 - **Luvia（运营）**
-  - 主责：全部非程式——pitch + 3–5 分钟影片 + README 打磨 + 提交 + 发布赛道推文 + 协调
+  - 主责：pitch + 3–5 分钟影片 + README / proposal + 提交 + 发布赛道推文 + Demo Day + 协调
   - 可投入时间：大致全程在线
 
 ## 可投入时间 / 时区
 
-- 两人皆大致全程在线
+- 全员大致全程在线
 - 时区：UTC+8（东八区），同步时段无时差问题
 
 ## 沟通方式

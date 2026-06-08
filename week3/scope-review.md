@@ -38,13 +38,14 @@
 10. **reputation consumer** → mock consumer（读 reputation → 拒绝）；本来就是 demo 演法，非降级
 11. **runtime / agent framework** → TBD，不绑特定 framework
 
-## 降级（1-dev 现实逼出的范围收敛）
+## 恢复（2-dev 带回的范围）
 
-### 12. Dashboard 砍到最小（不做打磨的 web app）
-- 砍因：原由"技术 #2"负责 dashboard，该成员已退出；只有一个开发者要做完 validator + chain adapter + ERC-8004 + agent，无前端人力
-- 处置：diff 视图降为**简单表格 / 静态页 / CLI viewer** 即可呈现 intent-vs-execution diff（demo 够用），不投人力做 polished web app
-- 注：money shot（intent-vs-execution diff + consumer 拒绝）仍保留，只是呈现形式最小化
+### 12. Dashboard 回到 ON（scoped but proper 的 demo UI）
+- 原砍因：技术 #2 退出，1-dev 无前端人力 → 砍到最小
+- 恢复因：**#2 已归队** → dashboard 回到 ON，由 #2 负责
+- 新范围：proper 的 demo UI（暗色主题、intent-vs-execution diff 视图、violations 列表、attestation 信息、mock consumer 决策），不再是最小 CLI viewer
+- repo：独立仓库 `eiv-dashboard`，通过 HTTP API 对接 `eiv-core`
 
 ## 一句话
 
-砍 production-grade trust（zkML/TEE）、砍 enforcement（闸门）、砍链下、砍 L3；延 G（spec linter）；dashboard 砍到最小（1-dev 现实）；其余外部依赖用已冻接口 + stub 替身，Week 4 换真。
+砍 production-grade trust（zkML/TEE）、砍 enforcement（闸门）、砍链下、砍 L3；延 G（spec linter）；dashboard 恢复为 scoped proper UI（#2 负责）；其余外部依赖用已冻接口 + stub 替身，Week 4 换真。
